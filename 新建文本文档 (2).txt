@@ -1,0 +1,139 @@
+C:\Users\Administrator\Desktop\大事件项目>git checkout master
+Switched to branch 'master'
+
+C:\Users\Administrator\Desktop\大事件项目>git push origin --delete '01.素材准备'
+To https://github.com/longdan-qilin/web_bigevent.git
+
+Git修改远程分支名
+1. git branch -m 旧分支名 新分支名
+
+2. git push --delete origin 旧分支名
+
+3. 将新分支名push上去 git push origin 新分支名
+
+
+
+(怎么删除远程仓库) 但是要把默认的选取另外一个  因为默认的删除不了的
+
+
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ git config --global user.name longdan-qilin
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ git config --global user.email 1724550614@qq.com
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ ssh-keygen -t rsa -C 'youremail@qq.com'
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ ssh-keygen -t rsa -C 'youremail@qq.com'^C
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ ssh-keygen -t rsa -C '1724550614@qq.com'
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Created directory '/c/Users/Administrator/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:N5LYeQ6auebB0XA5/jybY+Bq/UTQgCXC15gdIgBWoYg 1724550614@qq.com
+The key's randomart image is:
++---[RSA 2048]----+
+|.oo=+ oB+.       |
+|+ . .o=oo+       |
+|E.   .. = .      |
+|       B =       |
+|      o S =      |
+|     . =.X .     |
+|      *o .*      |
+|      ooo.o+     |
+|     ++. o+.     |
++----[SHA256]-----+
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ git clone git@github.com:longdan-qilin/test2.git
+Cloning into 'test2'...
+The authenticity of host 'github.com (222.42.5.41)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,222.42.5.41' (RSA) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+
+Administrator@HSDS180610V MINGW64 ~/Desktop
+$ cd test2/
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (master)
+$ code .
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (master)
+$ git add .
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (master)
+$ git commit -m 'test'
+[master (root-commit) 0f533c2] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 211 bytes | 105.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:longdan-qilin/test2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (master)
+$ git checkout -b 01_登录
+Switched to a new branch '01_登录'
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (01_登录)
+$ vim test.txt
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (01_登录)
+$ git add .
+warning: LF will be replaced by CRLF in test.txt.
+The file will have its original line endings in your working directory
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (01_登录)
+$ git commit -m 'world'
+[01_登录 a731dce] world
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (01_登录)
+$ git push -u origin 01_登录
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 247 bytes | 123.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for '01_登录' on GitHub by visiting:
+remote:      https://github.com/longdan-qilin/test2/pull/new/01_%E7%99%BB%E5%BD%95
+remote:
+To github.com:longdan-qilin/test2.git
+ * [new branch]      01_登录 -> 01_登录
+Branch '01_登录' set up to track remote branch '01_登录' from 'origin'.
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (01_登录)
+$ git checkout -b 02_注册
+Switched to a new branch '02_注册'
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (02_注册)
+$ git add .
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (02_注册)
+$ git commit -m "注册修改"
+On branch 02_注册
+nothing to commit, working tree clean
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (02_注册)
+$ ^C
+
+Administrator@HSDS180610V MINGW64 ~/Desktop/test2 (02_注册)
+$
