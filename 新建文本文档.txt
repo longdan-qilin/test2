@@ -1,0 +1,380 @@
+820024416
+
+参数 和代码 必须要一致 
+
+getup
+longdan-qilin 13164606105Agl
+1724550614
+agl72455
+web56@wh.itcast.cn
+git@gitee.com:tingweipeng/webapis_notes.git
+87879999
+
+git checkout -b 01_登录
+修改代码
+git add .
+git commit -m '提交信息'
+git push -u origin 01_登录
+
+接下来又改东西了
+git add .
+git commit -m '提交信息'
+git push origin 01_登录
+
+事件循环/事件环：
+Event Loop 
+js的执行分为同步任务(同步代码)和异步任务(异步代码)
+1.当碰到同步任务时，直接在执行栈(先进先出的数据结构)中执行
+2.当碰到异步任务并且时机符合时(点击了按钮，定位器的事件到了，Ajxa请求)就把异步添加到任务队列(先进先出的数据结构)当中
+3.当执行栈中的同步代码执行完毕，就去任务列当中就把异步代码添加到执行栈中执行
+4.这个反复轮询任务队列大的过程就是事件环
+
+
+git checkout -b 02_注册
+修改代码
+git add .
+git commit -m '提交信息'
+git push -u origin 02_注册
+
+修改代码
+
+1、jQuery入口函数可以书写多次，window.onload只能书写一次； 
+2、执行的时机不同，jQuery的入口，一旦我dom结构渲染完毕即可执行内部代码，不必等到所有外部资源加载完成；window.onload 的是等页面文档、外部的js文件、css文件、图片加载完毕才执行内部代码。
+
+
+防抖防止高频率触发事件
+节流减少一段时间内事件的触发频率。
+
+<.+?>  正则表达式 免费看文档会员内容
+    ^(13[0-9]|14[5-9]|15[0-3,5-9]|16[2,5,6,7]|17[0-8]|18[0-9]|19[0-3,5-9])\\d{8}$
+
+取反是显示类型转换的方式。
+省略花括号的情况下， 一行只能执行一句，如果在变量赋值之后加上分号就对。
+
+lorem数字 50个
+border -top:5px solid pink
+下边框的写法。
+内边距 ; padding-left 20px
+padding-top 30px
+盒子水平居中：margin：100px auto
+
+取反是显示类型转换的方式。
+
+宽度 很明显可以百分比表示的场景 百分比
+元素摆放很均匀明显符合弹性盒子的场景 display：flex 
+rem可作为通用解决方案
+
+1.background-size：contain
+a 图片大于容器：有可能造成容器的空白区域  将图片缩小
+b 图片小于容器 有可能造成容器的空白区域 将图片放大
+2.background-size：cover
+a 图片大于容器：等比例缩小 会填满整个背景区域 有可能造成图片某些区域看不见
+b 图片小于容器：等比例放大  填满整个背景区域  图片可能造成某个方向上的内容溢出
+
+
+
+  /* 颜色渐变 */
+    background: -webkit-linear-gradient(left ,#fa5a55,#fa994d);
+
+盒子向上移动特效：给指定元素使用相对定位 top 向上移动多少
+
+box-shadow:第一个值水平阴影 越小向左加阴影  越大向右加阴影 
+第一个值垂直阴影 越小向上加阴影  越大向下加阴影
+第三个值是模糊值 第四个值是 渲染往外突出
+
+行内块元素的基线默认为行内块元素的底部
+
+不在ul li a里面的a 加宽度 因为里面字数不同 会多些代码text-align -center
+
+alt+d  可以慢慢选中
+外边距 margin  盒子与盒子之间的距离
+外边距合并 用最大的..
+
+浮动元素中不存在margin合并现象 包括兄弟父子
+
+border-collapse;collapse 
+ 相邻边框合并在一起
+
+外边距塌陷 儿子要向下移动把父带下来了 。。。
+1.给儿子加外边距（给父元素加上 边框）
+2.给父亲加内边距 （给父元素定以上内边距）
+3.overflow: hidden;
+
+text-align 只恨对 行内块和行内有用 在父元素使用
+
+letter-spacing:20px;调整字（母）与字（母）之间的距离，可以为负值
+
+word-spacing:50px;调整单词与单词之间的距离 对中文无效，可以为负值
+
+行高 line-height 默认1.1-1.3 (normal)
+
+font-style 文字风格
+
+normal 默认值 不倾斜
+italic 斜体
+
+input:focus
+
+一行bai一个div，但是只要在div的css中使用float：duleft，可以使一行有多个div
+
+
+没有宽度的用padding 不怕撑大盒子
+大盒子写padding 小盒子写margin 
+
+宽的不加宽  高的不加高 
+
+大盒子 小盒子
+ 
+谷歌浏览器最小字体是 12px
+
+dotted 点线
+
+border-radius 倒角
+圆形：高度100%
+矩形
+
+text-shadow 阴影
+
+float-left浮动:
+css三种传统网页布局的方式:
+1.标准流 2.
+浮动 可以将2个盒子黏在一起，
+不能直接通过margin：auto 和 text-align-center来居中盒子
+
+圆角边框 正方形 - 变成圆：border-radius值是宽高的一半 长方形 - 变成椭圆 ：border-radius值是高度的一半 
+
+不管是什么元素 - 只要加了浮动，就会具有类似行内块的特点： 1.可以设置宽高 - span加了浮动，也可以设置宽高，不用进行display转换。 
+
+不要直接在浏览器测量尺寸 ，都是错的 实际开发没有这么干的 .
+
+vertical-algin  这个对父元素使用 
+居中
+
+先一个大盒子 之后2个盒子刚好填满...之后再里面一个盒子加8个大盒子  用 margin-left 来完成
+{.q .e div:nth-last-child(-n +4){
+    margin-bottom: 0;}
+
+那么怎样才能清除浮动呢  
+父亲加 overflow: hidden; 
+清除浮动的本质 ; 清除浮动带来的影响 就是闭合浮动
+
+a标签不继承颜色
+
+
+audio 音频: 
+1.controls 播放按钮
+2.谷歌浏览器把autoplay 属性给我们禁用了  自动播放功能>
+3.loop  无限循环播放功能
+4.<audio controls="controls">
+<source src="snow.mp3" 
+type="audio/mpeg">
+<source src="snow.ogg" 
+type="audio/mpeg">
+</audio>
+你的浏览器太low了 不支持audio播放
+
+ `static`   | **静态**定位 |
+| `relative` | **相对**定位 |
+| `absolute` | **绝对**定位 |
+| `fixed`    | **固定**定位
+
+浮动元素和绝对定位 固定定位 元素度不会触发外边距合并的问题
+
+## 9. 网页布局总结
+
+一个完整的网页，有标准流 、 浮动 、 定位 一起完成布局的。每个都有自己的专门用法。
+
+#### 1). 标准流 
+
+可以让盒子上下排列 或者 左右排列的
+
+#### 2). 浮动
+
+可以让多个块级元素一行显示  或者 左右对齐盒子   浮动的盒子就是按照顺序左右排列 
+
+#### 3). 定位
+
+定位最大的特点是有层叠的概念，就是可以让多个盒子 前后 叠压来显示。 但是每个盒子需要测量数值。
+
+隐藏:
+display:noon    不保留位置
+
+visibility: hidden  保留位置
+
+visibility: visible  显示
+
+cursor 鼠标样式 pointer 手指
+outline 轮廓线 noon 去掉
+resize 防止拖拽 noon 
+
+精灵图使用 png格式 ,小公司图片比较少没有必要使用精灵图 维护成本高 ...
+
+disabled 禁用按钮
+
+过度效果 transition: all 0.4s
+ 
+transform:scale 放大
+背景缩放: background-size 
+
+background-size:cover 等比例拉伸 要完全覆盖整个div盒子 可能有部分背景图片显示不全
+
+background-size: 高度和宽度等比例拉伸 当宽度或者高度 铺满div盒子就不在进行拉伸了 可能有部门空白区域
+
+flex 缺点就是
+flex-direction 设置主轴的方向
+
+row 左到 右
+
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    height: 2000px;
+}
+
+span也是有空间的 相对于div
+响应式布局///
+<!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+
+DOM -----文档对象模型
+
+<input type="radio" name="sex" value="2" id="men">
+<label for="men"></label>
+
+
+scale（1,1）x y轴放大和缩小
+
+git：
+cd 文件名 直接跳到这个 文件夹
+
+push 在数组后面添加一项或多项元素 返回的添加后数组的长度
+
+unshit 在数组前面添加一项或多项元素 返回的添加后数组的长度
+
+pop 和 shit 返回的是删除那个元素
+
+JQuery $（）后面的括号里的内容什么时候加引号，什么时候不加
+一、如果是已经声明存在的变量或者对象，就不用加引号。
+
+　　比如var name=document.getElementById("name");
+
+　　$(name)或者$(this)。
+
+二、document、this、window 这些都是系统对象   可以直接使用， 所以不用加引号。
+
+三、加引号的一般是元素标签有id、class这些，用$("xx")的方式获取这些元素用的。
+
+innerText,innerHTML区别：
+
+innerText 会去掉空格个换行 且不会识别html 
+innerHTML 不会去掉空格个换行 且会识别html 
+
+事件委托的原理主要是冒泡 通过父元素的事件  子元素冒泡到父元素 获取
+
+new 关键字执行过程
+1. new 构造函数可以在内存中创建了一个空的对象 
+2. this 就会指向刚才创建的空对象
+3. 执行构造函数里面的代码 给这个空对象添加属性和方法
+4. 返回这个对象
+
+
+//1. 所有构造函数都有prototype
+//2. 所有对象内部都有__proto__，帮对象自动找原型中的成员 
+3.prototype 都有一个constructor指回构造函数
+
+object.create（null）创建一个空对象
+
+构造函数里的原型对象 公共属性定义到构造函数里· 公共方法放到原型对象中
+
+对象都会有一个属性__proto__指向构造函数的原型对象prototype，之所以我们对象可以使用构造函数prototype原型对象的属性和方法，就是因为对象有(两个下划线)__proto__原型的存在。
+
+闭包 内存放到堆中 只会增加体积
+
+递归 内存放到栈中 会影响运行内存
+
+
+箭头函数不绑定this关键字，如果在箭头函数中使用this，this关键字将指向箭头函数定义位置中的this
+
+箭头函数的优点在于解决了this执行环境所造成的一些问题。比如：解决了匿名函数this指向的问题（匿名函数的执行环境具有全局性），包括setTimeout和setInterval中使用this所造成的问题
+
+闭包的应用场景：
+框架
+
+Token是服务端生成的一串字符串，以作客户端进行请求的一个令牌，当第一次登录后，服务器生成一个Token便将此Token返回给客户端，以后客户端只需带上这个Token前来请求数据即可，无需再次带上用户名和密码。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
